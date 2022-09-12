@@ -5,12 +5,37 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
+
 }
 
 img {
   width: 600px;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex:auto;
+  flex-direction: column;
+}
 
+.header, .footer{
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.right-links, .left-links {
+  display: flex;
+  gap: 16px;
+  list-style: none;
+}
 button {
   font-family: Roboto, sans-serif;
   border: none;
